@@ -1,4 +1,3 @@
-//js/main.js
 const botaoAutor = document.getElementById('botaoAutor');
 const respAutor = document.getElementById('respAutor');
 
@@ -7,8 +6,7 @@ botaoAutor.addEventListener('click', pegarInformacao);
 const urlBase = "https://atividade-18.vercel.app/";
 
 async function pegarInformacao() {
-
-  respAutor.innerText = "Aguarde... "
+  respAutor.innerText = "Aguarde... ";
 
   try {
     const response = await fetch(urlBase);
