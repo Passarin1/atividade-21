@@ -43,9 +43,8 @@ async function autenticar(e) {
     // Armazena o token JWT no localStorage para manter a sessão do usuário
     localStorage.setItem('jwt', data.token);
 
-    // Exibe uma mensagem de sucesso na interface do usuário em verde juntamente com o Token gerado
-    areaMensagem.style = "color:green";
-    areaMensagem.innerHTML = "Usuário Autenticado com Sucesso! <br> Token: " + data.token;
+    // Redireciona para a página home.html
+    window.location.href = 'home.html'; // Redireciona para a área restrita após autenticação bem-sucedida
 
   } catch (error) {
     // Exibe uma mensagem de erro na interface do usuário em vermelho
